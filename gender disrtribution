@@ -1,0 +1,15 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+
+gender_data = {'Gender': ['Male', 'Female'], 'Population': [3400, 3600]}
+gender_df = pd.DataFrame(gender_data)
+
+
+sns.barplot(x='Gender', y='Population', data=gender_df)
+plt.title('Gender Distribution in 2020')
+plt.xlabel('Gender')
+plt.ylabel('Population')
+plt.show()
+
